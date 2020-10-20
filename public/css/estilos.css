@@ -1,6 +1,10 @@
 @charset "utf-8";
 
-*{margin:auto;border:0;padding:0;}
+*{
+	margin:auto;border:0;padding:0;
+/*solución temporal para diferencia entre local y servidor*/
+zoom:98.5%;
+}
 body{
 	background-image:url("../fondo_sandiego.jpg");
 	background-repeat:no-repeat;
@@ -243,6 +247,14 @@ aside p{
 	}
 	.panel{
 		top:100px;	
+	}	
+}
+@media screen and (max-height: 600px){
+	.btn-show-panel{
+		top:30px;
+	}
+	.panel{
+		top:30px;	
 	}	
 }
 @media screen and (max-width:1400px){

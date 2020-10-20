@@ -105,7 +105,7 @@ const uploadImage = (div) => {
 	let formData= new FormData();
 	formData.append("images[]",file.files[0]);
 	url="class/upload_image.php";				
-	console.log(formData);
+	//console.log(formData);
 		
 	$.ajax({
 		url:url,			
@@ -116,7 +116,7 @@ const uploadImage = (div) => {
 		contentType:false,			
 		success:function(datos){
 			document.querySelector(".ima_profile").src="public/ima/"+datos;
-			console.log(datos);
+			//console.log(datos);
 		},
 		error:function(){
 			console.log("Ocurrió un error con la petición Ajax");
